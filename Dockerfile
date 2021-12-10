@@ -7,6 +7,6 @@ ADD https://www.free-css.com/assets/files/free-css-templates/download/page272/ev
 WORKDIR /var/www/html
 RUN unzip evolve.zip
 RUN cp -rvf evolve/* /var/www/html/
-RUN rm -rf savorye evolve.zip
+RUN rm -rf evolve evolve.zip
 CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
 EXPOSE 80
